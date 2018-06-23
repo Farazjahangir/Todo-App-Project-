@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign In</title>
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <h1>Sign In</h1>
+    </header>
+    <!-- Main Section -->
+    <div id="main-div">
+
+        <!-- Input Fields -->
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="Username" onfocus="emptyField()">
+        </div>
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Password" onfocus="emptyField()">
+        </div> 
+        
+        <!-- SignIn Button -->
+        <div class="input-group">
+            <input type="button" value="SignIn" class="btn" id="sign-in">
+        </div>  
+        
+        <p id="link">Want To Create Account? 
+            <a href="signup.html">Click Here</a> 
+        </p> 
+        <!-- For Any Message -->
+        <p id="message"></p>
+
+        <!-- For Loader -->
+        <p id="loader"></p>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/signin.js"></script>
+</body>
+</html>

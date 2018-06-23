@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todos</title>
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="css/todos.css">
+    
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+</head>
+<body onload="getTodos()">
+    <!-- Header Section -->
+    <header id="header">
+        <h1>Todo</h1>
+        <button id="sign-out" onClick="signOut()">Sign Out</button>
+    </header>
+
+    <!-- Main Section  -->
+    <div id="main-div">
+        <div id="input-field-div">
+            <label for="input-field">Add Task:</label>
+            <input type="text" id="input-field" placeholder="Enter Task">
+            <div id="btn-group">
+                <input type="button" value="Add Task" id="add-btn" class="btn-hover" onClick="addTask()">
+                <input type="button" value="Delete All" id="del-btn" class="btn-hover" onClick="deleteAll()">
+            </div>
+        </div>
+        <div id="todos-div">
+            <h1>Todo List:</h1>
+            <ul id="list" class="list"></ul>
+
+        </div>
+    </div>    
+
+    <script src="js/main.js"></script>
+</body>
+</html>

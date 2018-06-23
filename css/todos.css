@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/********************* Header Section ****************/
+#header{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    background: #34495e;
+    padding: 7px;
+    justify-content: space-between;
+    align-items: center;
+}
+#header h1{
+    color: white;
+    font-size: 2.3em;
+    cursor: pointer;
+}
+#sign-out{
+    border: 1px solid #CAD3C8;
+    padding: 7px;
+    font-size: 1.1em;
+    background: #CAD3C8;
+    cursor: pointer;
+    height: max-content;
+    border-radius: 4px;
+}
+#sign-out:hover{
+    box-shadow: -3px -3px 5px black;
+}
+
+
+/************************* Main Section ***************/
+#input-field-div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+#input-field{
+    padding: 7px;
+    border-radius : 4px;
+    border: 1px solid rgb(149, 146, 146);
+}
+#input-field-div label{
+    font-size: 1.2em;
+}
+#btn-group{
+    margin-top: 5px;
+}
+#add-btn{
+    padding: 3px;
+    font-size: 1.1em;
+    border: 2px solid #70a1ff;
+    background: #70a1ff;
+    border-radius : 5px;
+    color: white;
+    cursor: pointer;
+}
+.btn-hover:hover{
+    box-shadow: -1px -1px 3px black;
+}
+#del-btn{
+    padding: 3px;
+    font-size: 1.1em;
+    border: 2px solid #e84118;
+    background: #e84118;
+    border-radius : 5px;
+    color: white;
+    cursor: pointer;    
+}
+#todos-div{
+    margin-top: 50px;
+    margin-left: 5px;
+}
+.list{
+    margin-top: 20px;
+}
+.todos{
+    font-size: 1.2em;
+    border: 2px solid lightgray;
+    margin-top: 15px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.todos img{
+    width: 30px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 500ms ease-in-out;
+}
+.todos img:hover{
+    opacity: 1;
+}
+.text{
+    flex: 1;
+    font-size: 1.2em;
+}
+.li-btn{
+   padding:2.5px;
+   margin-right: 4px;
+   font-size: 0.9em;
+   cursor: pointer;
+}
+.btn-warning{
+    border: 2px solid #e84118;
+    background: #e84118;
+    transition: background 400ms ease-in-out;    
+    border-radius : 4px;
+    color: white;
+}
+.btn-warning:hover{
+    background: #a72504
+}
+.btn-info{
+    border: 2px solid #07aaa7;
+    background: #07aaa7;
+    transition: background 400ms ease-in-out;    
+    border-radius : 4px;
+    color: white;
+}
+.btn-info:hover{
+    background: #098684;
+}
+.btn-blue{
+    border: 2px solid #0984e3;
+    background: #0984e3;
+    transition: background 400ms ease-in-out;    
+    border-radius : 4px;
+    color: white;
+}
+.btn-blue:hover{
+    background: #0c61a1;
+}
+
+.form-control{
+    padding: 7px;
+    border-radius : 4px;
+    border: 1px solid rgb(149, 146, 146);
+    flex: 1;
+}
+.btn{
+    padding: 4px;
+    border-radius : 4px;
+    font-size: 0.8em;
+    background :  #07aaa7;
+    border: 2px solid #07aaa7;
+    transition: background 400ms ease-in-out; 
+    cursor: pointer;   
+}
+.line-through{
+    text-decoration: line-through;
+    flex:1;
+    color: grey;
+}
+.none{
+    display: none;
+}
+@media (max-width: 550px){
+    #input-field-div{
+        width: 90%;
+    }
+}
+@media (max-width: 450px){
+    body{
+        font-size : 13px;
+    }
+}
